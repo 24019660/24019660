@@ -1,3 +1,34 @@
-git init
-mkdir folder
-cd folder
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main()
+{
+    int qtdea, qtdeb, qtdec;
+    float rendaa, rendab, rendac, dya, dyb, dyc, lucrotot;
+
+        dya = (17/24.13)*100;
+        dyb = (35/11)*100;
+        dyc = (25/38.65)*100;
+
+    printf("Aqui estao os Dividend Yeld dos ativos 1, 2 e 3, respectivamente: \n %.2f,\n %.2f, \n %.2f", dya, dyb, dyc);
+    printf("\n Quantas cotas pretende comprar do ativo 1?");
+    scanf("%i", &qtdea);
+    printf("\n Quantas cotas pretende comprar do ativo 2?");
+    scanf("%i", &qtdeb);
+    printf("\n Quantas cotas pretende compra do ativo 3?");
+    scanf("%i", &qtdec);
+
+    rendaa = qtdea*17;
+    rendab = qtdeb*35;
+    rendac = qtdec*25;
+    lucrotot = rendaa + rendab + rendac;
+
+    printf("\n Sua renda com o ativo 1, foi de: %f", rendaa);
+    printf("\n Sua renda com o ativo 2, foi de: %f", rendab);
+    printf("\n Sua renda com o ativo 3, foi de %f", rendac);
+    printf("\n Seu lucro total foi: %f", lucrotot);
+
+
+    return 0;
+}
